@@ -41,16 +41,13 @@ const Overview = () => {
         {overviewData?.name || 'Cryptocurrency'} Overview
       </h2>
 
-      {/* Brief Description */}
       <p className="text-gray-700 text-lg mb-6">
         {overviewData?.description?.en
           ? overviewData.description.en.split('.').slice(0, 2).join('.') + '.'
           : 'Description not available.'}
       </p>
 
-      {/* Overview Cards */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {/* Market Cap */}
         <div className="bg-white p-4 rounded-lg shadow-lg">
           <h3 className="text-blue-600 font-bold text-lg">Market Cap</h3>
           <p className="text-gray-700 text-xl font-semibold">
@@ -58,7 +55,6 @@ const Overview = () => {
           </p>
         </div>
 
-        {/* Total Supply */}
         <div className="bg-white p-4 rounded-lg shadow-lg">
           <h3 className="text-blue-600 font-bold text-lg">Total Supply</h3>
           <p className="text-gray-700 text-xl font-semibold">
@@ -66,7 +62,6 @@ const Overview = () => {
           </p>
         </div>
 
-        {/* Circulating Supply */}
         <div className="bg-white p-4 rounded-lg shadow-lg">
           <h3 className="text-blue-600 font-bold text-lg">Circulating Supply</h3>
           <p className="text-gray-700 text-xl font-semibold">
@@ -74,7 +69,6 @@ const Overview = () => {
           </p>
         </div>
 
-        {/* All-Time High */}
         <div className="bg-white p-4 rounded-lg shadow-lg">
           <h3 className="text-blue-600 font-bold text-lg">All-Time High</h3>
           <p className="text-gray-700 text-xl font-semibold">
@@ -82,7 +76,6 @@ const Overview = () => {
           </p>
         </div>
 
-        {/* Rank */}
         <div className="bg-white p-4 rounded-lg shadow-lg">
           <h3 className="text-blue-600 font-bold text-lg">Rank</h3>
           <p className="text-gray-700 text-xl font-semibold">

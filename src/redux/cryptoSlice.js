@@ -35,6 +35,7 @@ export const {
   setCurrentPrice,
   setHistoricalData,
   setOverviewData,
+  setWebSocketChartData,
 } = cryptoSlice.actions;
 
 export default cryptoSlice.reducer;
